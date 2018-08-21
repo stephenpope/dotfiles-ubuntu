@@ -147,7 +147,7 @@ SPACESHIP_DOTNET_SYMBOL=" "
 SPACESHIP_EXEC_TIME_PREFIX="("
 SPACESHIP_EXEC_TIME_SUFFIX=") "
 
-PACESHIP_PROMPT_ORDER=(
+SPACESHIP_PROMPT_ORDER=(
   time          # Time stampts section
   vi_mode       # Vi-mode indicator
   user          # Username section
