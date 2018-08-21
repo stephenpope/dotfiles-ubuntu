@@ -11,7 +11,7 @@ if ! type "tree" > /dev/null; then
     echo "INSTALL : tree"
     echo "-----------"
 
-    apt-get install tree -y
+    snap install tree -y
 
     echo "-----------"
 fi
