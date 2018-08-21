@@ -7,7 +7,7 @@ if ! type "fuck" > /dev/null; then
     echo "-----------"
 
     sudo apt install python3-dev python3-pip -y
-    sudo pip3 install thefuck -y
+    sudo pip3 install thefuck 
 
     echo "-----------"
 fi
