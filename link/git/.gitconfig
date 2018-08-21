@@ -1,3 +1,5 @@
 [user]
 	name = Stephen Pope
 	email = github@stephenpope.co.uk
+[alias]
+	add-commit = !git add -A && git commit
