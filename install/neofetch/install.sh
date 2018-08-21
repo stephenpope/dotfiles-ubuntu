@@ -9,7 +9,7 @@ fi
 if ! type "neofetch" > /dev/null; then
     
     echo "-----------"
-    echo "INSTALLING : Neofetch"
+    echo "INSTALL : Neofetch"
     echo "-----------"
 
     apt-get install neofetch -y
@@ -18,7 +18,7 @@ if ! type "neofetch" > /dev/null; then
 fi
 
 echo "-----------"
-echo "LINKING : Neofetch"
+echo "SETUP : Neofetch"
 echo "-----------"
 
 ln -sf `pwd`/10-neofetch /etc/update-motd.d/

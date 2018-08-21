@@ -5,10 +5,12 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-for file in `find . -mindepth 2 -type f -name 'install.sh'` 
+BASEDIR=`pwd`
+
+for file in `find $BASEDIR -mindepth 2 -type f -name 'install.sh'` 
 do
     echo "-----------"
-    echo "Installing : $file"
+    echo "Running : $file"
     echo "-----------"
     cd `dirname $file`
     bash `basename $file`

@@ -5,11 +5,10 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-
 if ! type "git" > /dev/null; then
     
     echo "-----------"
-    echo "INSTALLING : git"
+    echo "INSTALL : git"
     echo "-----------"
 
     apt-get install git-core -y

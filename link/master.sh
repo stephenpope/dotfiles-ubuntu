@@ -8,7 +8,7 @@ fi
 if ! type "stow" > /dev/null; then
    
     echo "-----------"
-    echo INSTALLING: GNU Stow
+    echo INSTALL : GNU Stow
     echo "-----------"    
     
     apt-get install stow -y
