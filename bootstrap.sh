@@ -1,12 +1,7 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
-   exit 1
-fi
-
-add-apt-repository universe
-apt-get update
+sudo add-apt-repository universe
+sudo apt-get update
 
 BASEDIR=`pwd`
 

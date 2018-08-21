@@ -1,17 +1,12 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
-   exit 1
-fi
-
 if ! type "stow" > /dev/null; then
    
     echo "-----------"
     echo INSTALL : GNU Stow
     echo "-----------"    
     
-    apt-get install stow -y
+    sudo apt-get install stow -y
 
     echo "-----------"
 fi

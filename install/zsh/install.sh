@@ -1,17 +1,12 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
-   exit 1
-fi
-
 if ! type "zsh" > /dev/null; then
     
     echo "-----------"
     echo "INSTALL : zsh"
     echo "-----------"
 
-    apt-get install zsh curl -y
+    sudo apt-get install zsh curl -y
 
     echo "-----------"
 fi
