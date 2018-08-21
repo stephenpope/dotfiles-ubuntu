@@ -1,0 +1,4 @@
+#!/bin/sh
+echo
+neofetch --config /root/.config/neofetch/config.conf
+
