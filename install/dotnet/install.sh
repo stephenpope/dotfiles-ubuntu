@@ -6,9 +6,8 @@ if ! type "dotnet" > /dev/null; then
     echo "INSTALL : dotnet"
     echo "-----------"
 
-    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
-    sudo dpkg -i packages-microsoft-prod.deb
-    rm -f packages-microsoft-prod.deb
+    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    sudo curl -o /etc/apt/sources.list.d/microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
 
     sudo apt-get -y install apt-transport-https
     sudo apt-get update
