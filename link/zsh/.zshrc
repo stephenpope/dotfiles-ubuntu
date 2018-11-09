@@ -148,9 +148,10 @@ SPACESHIP_EXEC_TIME_PREFIX="("
 SPACESHIP_EXEC_TIME_SUFFIX=") "
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/snap/bin:$PATH"
+export GOROOT=/usr/local/go
 export GOPATH="$HOME/source/go"
-export PATH="$(go env GOPATH)/bin:$PATH"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
 
 eval "$(rbenv init -)"
+
 eval $(thefuck --alias)

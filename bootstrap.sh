@@ -12,4 +12,23 @@ echo "-----------"
 cd $BASEDIR/install
 bash master.sh
 echo "-----------"
+ruby --version
+echo "-----------"
+dotnet --info
+echo "-----------"
+docker --version
+echo "-----------"
+go version
+echo "-----------"
+git --version
+echo "-----------"
+tree --version
+echo "-----------"
+thefuck --version
+echo "-----------"
+pwsh --version
+echo "-----------"
+kubectl version
+echo "-----------"
 echo "[COMPLETE!]"
+
